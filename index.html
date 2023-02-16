@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="img/Logo.svg" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="assets/icons/Logo.svg" />
     <title>Главная страница</title>
   </head>
 
   <body>
-    <header class="header-main">
+    <header class="header">
       <div class="container">
-        <header class="header-main-child">
+        <div class="navbar">
           <div class="logo">
-            <img src="img/Logo.svg" alt="Логотип" />
+            <img src="assets/icons/Logo.svg" alt="Логотип" />
           </div>
 
           <nav>
@@ -36,85 +36,93 @@
 
           <div class="soc-icons">
             <a href="https://www.youtube.com" target="_blank">
-              <img src="/img/Logo-YouTube.svg" alt="Логотип YouTube" />
+              <img src="assets/icons/Logo-YouTube.svg" alt="Логотип YouTube" />
             </a>
             <a href="https://www.vk.com/" target="_blank">
-              <img src="/img/Logo-VK.svg" alt="Логотип VK" />
+              <img src="assets/icons/Logo-VK.svg" alt="Логотип VK" />
             </a>
           </div>
-        </header>
+        </div>
       </div>
 
       <hr />
+    </header>
 
+    <section class="banner">
       <div class="container">
-        <div class="header-main-container">
-          <div class="title-container">
-            <h1>
-              Петербургский <br />
-              теннисный клуб <br />
-              имени М.А. Пасечникова
-            </h1>
-          </div>
+        <div class="title-container">
+          <h1>Петербургский теннисный клуб имени М.А. Пасечникова</h1>
+        </div>
 
-          <div class="video">
-            <a href="/" target="_blank">
-              <img src="img/Video-play-header.svg" alt="Запустить видео" />
-            </a>
-            <div class="video-caption">
-              <p>
-                Посмотрите видео <br />
-                о нашем клубе
-              </p>
-            </div>
+        <div class="video">
+          <a href="/" target="_blank">
+            <img
+              src="assets/icons/Video-play-header.svg"
+              alt="Запустить видео"
+            />
+          </a>
+          <div class="video-caption">
+            <p>Посмотрите видео о нашем клубе</p>
           </div>
         </div>
 
-        <div class="container-cards-info">
-          <div class="card-info">
+        <ul class="container-cards-info">
+          <li class="card-info">
             <div class="info">
               <p class="title">Услуги</p>
               <p class="topic">Аренда корта</p>
             </div>
             <a href="/">
-              <img src="img/Follow-the-link.svg" alt="Перейти по ссылке" />
+              <img
+                src="assets/icons/Follow-the-link.svg"
+                alt="Перейти по ссылке"
+              />
             </a>
-          </div>
-          <div class="card-info">
+          </li>
+          <li class="card-info">
             <div class="card-info">
               <div class="info">
                 <p class="title">Услуги</p>
                 <p class="topic">Детский теннис</p>
               </div>
               <a href="/">
-                <img src="img/Follow-the-link.svg" alt="Перейти по ссылке" />
+                <img
+                  src="assets/icons/Follow-the-link.svg"
+                  alt="Перейти по ссылке"
+                />
               </a>
             </div>
-          </div>
-          <div class="card-info">
+          </li>
+          <li class="card-info">
             <div class="card-info">
               <div class="info">
                 <p class="title">Услуги</p>
                 <p class="topic">Сборы команд</p>
               </div>
               <a href="/">
-                <img src="img/Follow-the-link.svg" alt="Перейти по ссылке" />
+                <img
+                  src="assets/icons/Follow-the-link.svg"
+                  alt="Перейти по ссылке"
+                />
               </a>
             </div>
-          </div>
-          <div class="card-info">
+          </li>
+          <li class="card-info">
             <div class="card-info">
               <div class="info">
                 <p class="title">Турниры</p>
                 <p class="topic">Расписание</p>
               </div>
               <a href="/">
-                <img src="img/Follow-the-link.svg" alt="Перейти по ссылке" />
+                <img
+                  src="assets/icons/Follow-the-link.svg"
+                  alt="Перейти по ссылке"
+                />
               </a>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </header>
+    </section>
   </body>
 </html>

@@ -4,16 +4,13 @@
 }
 
 body {
-  font-family: "Gilroy";
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.header-main {
-  background-image: url(img/Header-background.jpg);
+  background-image: url(/assets/images/Header-background.jpg);
   background-size: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Gilroy";
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -21,7 +18,7 @@ body {
   margin: 0 auto;
 }
 
-.header-main-child {
+.navbar {
   padding-top: 30px;
   display: flex;
   align-items: center;
@@ -52,25 +49,27 @@ a:hover {
   color: var(--purple);
 }
 
-.header-main hr {
+.header hr {
   background-color: rgba(255, 255, 255, 0.3);
   height: 1px;
   border: none;
   margin-top: 2%;
 }
 
-.header-main-container h1 {
+.title-container {
+  /* margin-left: 0; */
+  max-width: 633px;
+  height: 200px;
+  /* margin: 200px 0 60px; */
+}
+
+.title-container h1 {
   color: var(--white);
   font-weight: 700;
   font-size: 48px;
   line-height: 140%;
+  max-width: 550px;
   margin-top: 20%;
-}
-
-.title-container {
-  margin-left: 0;
-  max-width: 636px;
-  height: 201px;
 }
 
 .video {
@@ -81,6 +80,7 @@ a:hover {
 }
 
 .video-caption {
+  margin-left: 30px;
   color: var(--white);
   font-weight: 600;
   font-size: 18px;
