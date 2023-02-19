@@ -1,11 +1,12 @@
 :root {
   --white: white;
   --purple: #8d86c9;
+  --palish-peach: #f7ece1;
 }
 
 body {
   background-image: url(/assets/images/Header-background.jpg);
-  background-size: 1920px 1000px;
+  background-size: 100vw 1000px;
   background-repeat: no-repeat;
   font-family: "Gilroy";
   margin: 0;
@@ -16,6 +17,8 @@ body {
   width: 70%;
   margin: 0 auto;
 }
+
+/* header + banner start */
 
 .navbar {
   padding-top: 30px;
@@ -119,29 +122,65 @@ a:hover {
   height: 100%;
 }
 
+/* header + banner end */
+
+/* container-cards-photo start */
+
+.photo {
+  margin: 150px auto;
+}
+
 .container-cards-photo {
   display: flex;
-  flex-direction: row;
+  gap: 24px;
+  width: 100%;
   justify-content: center;
-  margin: 150px;
+  height: 500px;
 }
 
 .card-photo {
-  width: 416px;
-  height: 500px;
-  border: 1px solid #f7ece1;
-  margin-right: 24px;
-}
+  width: 32%;
+  height: 100%;
+  border: 1px solid var(--palish-peach);
+  padding: 25px 20px;
 
-.card-photo img {
-  margin: 25px 20px;
-}
-
-.card-photo h3 {
   font-weight: 700;
   font-size: 27px;
   line-height: 140%;
   color: var(--white);
   text-align: center;
-  margin-top: -143px;
 }
+
+.card-photo #photo-one {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/section-3-cards-1.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.card-photo #photo-two {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/section-3-cards-2.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.card-photo #photo-three {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/section-3-cards-3.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+div[id^="photo"] {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+div[id^="photo"] h3 {
+  width: 360px;
+}
+
+/* container-cards-photo end */
