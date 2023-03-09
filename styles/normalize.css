@@ -34,6 +34,7 @@ main {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 /**
@@ -356,4 +357,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+h3 {
+  margin: 0;
 }

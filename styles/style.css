@@ -1,13 +1,13 @@
 :root {
   --white: white;
   --purple: #8d86c9;
+  --palish-peach: #f7ece1;
 }
 
 body {
   background-image: url(/assets/images/Header-background.jpg);
-  background-size: 1000px;
+  background-size: 100vw 1000px;
   background-repeat: no-repeat;
-  background-size: cover;
   font-family: "Gilroy";
   margin: 0;
   box-sizing: border-box;
@@ -17,6 +17,8 @@ body {
   width: 70%;
   margin: 0 auto;
 }
+
+/* header + banner start */
 
 .navbar {
   padding-top: 30px;
@@ -59,6 +61,7 @@ a:hover {
 .title-container {
   max-width: 633px;
   height: 200px;
+  margin: 200px 0 60px;
 }
 
 .title-container h1 {
@@ -77,6 +80,7 @@ a:hover {
 }
 
 .video-caption {
+  margin-top: 15px;
   margin-left: 30px;
   color: var(--white);
   font-weight: 600;
@@ -87,7 +91,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  margin-top: 202px;
+  margin-top: 196px;
 }
 
 .card-info {
@@ -117,3 +121,68 @@ a:hover {
   justify-content: space-between;
   height: 100%;
 }
+
+/* header + banner end */
+
+/* container-cards-photo start */
+
+.photo {
+  margin: 150px auto;
+}
+
+.container-cards-photo {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  justify-content: center;
+}
+
+.card-photo {
+  width: 32%;
+  border: 1px solid var(--palish-peach);
+  padding: 25px 20px;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 140%;
+  color: var(--white);
+  text-align: center;
+}
+
+.card-photo #photo-one {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/section-3-cards-1.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.card-photo #photo-two {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/section-3-cards-2.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+.card-photo #photo-three {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/section-3-cards-3.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+div[id^="photo"] {
+  display: flex;
+  justify-content: center;
+}
+
+div[id^="photo"] h3 {
+  width: 310px;
+  height: 76px;
+  padding-top: 334px;
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 140%;
+}
+
+/* container-cards-photo end */
