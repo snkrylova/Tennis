@@ -135,12 +135,10 @@ a:hover {
   gap: 24px;
   width: 100%;
   justify-content: center;
-  height: 500px;
 }
 
 .card-photo {
   width: 32%;
-  height: 100%;
   border: 1px solid var(--palish-peach);
   padding: 25px 20px;
 
@@ -174,13 +172,17 @@ a:hover {
 
 div[id^="photo"] {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  margin-bottom: 40px;
 }
 
 div[id^="photo"] h3 {
-  width: 360px;
+  width: 310px;
+  height: 76px;
+  padding-top: 334px;
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 140%;
 }
 
 /* container-cards-photo end */
