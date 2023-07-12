@@ -1,7 +1,8 @@
 :root {
-  --white: white;
-  --purple: #8d86c9;
-  --palish-peach: #f7ece1;
+  --first-text-color: white;
+  --second-text-color: #333333;
+  --first-background-color: #8d86c9;
+  --second-background-color: #f7ece1;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
   background-size: 100vw 1000px;
   background-repeat: no-repeat;
   font-family: "Gilroy";
+  font-style: normal;
+  color: var(--second-text-color);
   margin: 0;
   box-sizing: border-box;
 }
@@ -28,7 +31,7 @@ body {
 }
 
 a.nav-item {
-  color: var(--white);
+  color: var(--first-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -39,16 +42,13 @@ a.nav-item:last-child {
   margin-right: 0;
 }
 
-.soc-icons a {
+a {
+  transition: color 0.3s linear;
   text-decoration: none;
 }
 
-a {
-  transition: color 0.3s linear;
-}
-
 a:hover {
-  color: var(--purple);
+  color: var(--second-text-color);
 }
 
 .header hr {
@@ -65,7 +65,7 @@ a:hover {
 }
 
 .title-container h1 {
-  color: var(--white);
+  color: var(--first-text-color);
   font-weight: 700;
   font-size: 48px;
   line-height: 140%;
@@ -82,7 +82,7 @@ a:hover {
 .video-caption {
   margin-top: 15px;
   margin-left: 30px;
-  color: var(--white);
+  color: var(--first-text-color);
   font-weight: 600;
   font-size: 18px;
 }
@@ -96,8 +96,8 @@ a:hover {
 
 .card-info {
   width: 100%;
-  background-color: var(--purple);
-  color: var(--white);
+  background-color: var(--first-background-color);
+  color: var(--first-text-color);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -139,13 +139,13 @@ a:hover {
 
 .card-photo {
   width: 32%;
-  border: 1px solid var(--palish-peach);
+  border: 1px solid var(--second-background-color);
   padding: 25px 20px;
 
   font-weight: 700;
   font-size: 27px;
   line-height: 140%;
-  color: var(--white);
+  color: var(--first-text-color);
   text-align: center;
 }
 
@@ -186,3 +186,287 @@ div[id^="photo"] h3 {
 }
 
 /* container-cards-photo end */
+
+/*sport-club start*/
+
+.container-sport-club {
+  display: flex;
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.sport-club-img {
+  width: 27.4vw;
+  margin: 70px 0px;
+  z-index: 1;
+}
+
+.sport-club-info {
+  width: 33.125vw;
+  margin-left: -4.5vw;
+  background-color: var(--second-background-color);
+  padding: 6.5vh 3.1vw 7.8vh 7.6vw;
+}
+
+.sport-club-info__description p {
+  width: 22.4vw;
+  margin-bottom: 1vh;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.container-sport-club ul {
+  list-style-image: url(/assets/icons/Marcus.svg);
+  position: relative;
+  left: 0.5vw;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.container-sport-club li {
+  margin-bottom: 1vh;
+}
+
+.container-sport-club li span {
+  position: relative;
+  display: block;
+  width: 20.8vw;
+  text-align: left;
+  left: 1vw;
+}
+
+/*sport-club end*/
+
+/*coaches start*/
+
+section.coaches {
+  margin: 15vh 0;
+}
+
+.coaches h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__header li {
+  list-style: none;
+}
+
+.section__header__buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 0;
+}
+
+.section__header__buttons button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--first-background-color);
+  border: none;
+  margin: 29.8px auto;
+
+  transition: background-color 0.3s;
+}
+
+.section__header__buttons button:hover {
+  background-color: var(--second-background-color);
+  cursor: pointer;
+}
+
+.section__header__buttons button:active {
+  background-color: var(--first-background-color);
+}
+
+.button-left {
+  background: url(/assets/icons/Button-arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40%;
+}
+
+.button-right {
+  background: url(/assets/icons/Button-arrow-left.svg);
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  background-position: center;
+  height: 40%;
+}
+
+.coaches__cards {
+  display: flex;
+  gap: 1.25vw;
+  justify-content: center;
+  margin-top: 7vh;
+}
+
+.coaches__cards__item {
+  width: 17%;
+}
+
+.coaches__cards__border {
+  height: 22.2vh;
+  border: 1px solid var(--second-background-color);
+  padding: 0 0.15vw;
+}
+
+.coaches__cards__border img {
+  display: block;
+  margin: 0 auto;
+}
+
+.coaches__name {
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  margin-top: 2.3vh;
+}
+
+.coaches__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+  margin-top: 1.4vh;
+  width: 10.25vw;
+}
+
+/*coaches end*/
+
+/*price_and_services start*/
+
+.price_and_services {
+  display: flex;
+}
+
+.price_and_services > section {
+  width: 50%;
+  margin: 17vh auto;
+}
+
+.price_and_services h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+/*price start*/
+
+.price__buttons {
+  margin-top: 9vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.price__buttons__item {
+  background-color: var(--first-background-color);
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 6%;
+  width: 78%;
+  height: 6vh;
+  list-style-type: none;
+}
+
+.price__buttons__item > a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--first-text-color);
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 20%;
+}
+
+.price__buttons__item > a > h4:hover {
+  color: var(--first-background-color);
+  -webkit-text-stroke: 1px var(--first-text-color);
+}
+
+/*price end*/
+
+/*services start*/
+
+.services__container {
+  height: 27vh;
+  border: 1px solid var(--second-background-color);
+  padding: 30px 25px;
+  margin-top: 10%;
+}
+
+.services__container .cafe {
+  background: url(/assets/images/Services-cafe.png);
+  background-size: cover;
+  height: 100%;
+}
+
+.cafe h3 {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 140%;
+  color: var(--first-text-color);
+  padding-top: 20vh;
+  padding-left: 2vw;
+}
+
+/*services end*/
+
+/*price_and_services end*/
+
+/*footer start*/
+
+.footer {
+  background-color: var(--second-background-color);
+  color: var(--second-text-color);
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 500;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  gap: 8%;
+}
+
+.footer__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  opacity: 0.3;
+}
+
+.footer-page-nav {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+.footer-page-nav__item {
+  text-decoration: none;
+  color: var(--second-text-color);
+}
+
+.soc-icons {
+  display: flex;
+  width: 8%;
+  gap: 1.3vw;
+}
+
+/*footer end*/
